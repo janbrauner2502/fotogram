@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotogram</title>
+    <link rel="shortcut icon" href="./img/favicon/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="font.css">
+
+</head>
+
+<body id="body-scrollbar">
+    <div onclick="closeOverlay()" id="overlay" class="overlay d-none">
+    </div>
+
+    <header>
+        <div>
+            <img src="./img/logo/Fotogram_Logo.svg" alt="fotogram">
+        </div>
+
+    </header>
+    <main>
+        <div>
+            <h1>Your personal photo album</h1>
+        </div>
+        <div class="image-container">
+            <div onclick="openOverlay(0)"><img src="./img/Image1.jpg" alt="Image1"></div>
+            <div onclick="openOverlay(1)"><img src="./img/Image2.jpg" alt="Image2"></div>
+            <div onclick="openOverlay(2)"><img src="./img/Image3.jpg" alt="Image3"></div>
+            <div onclick="openOverlay(3)"><img src="./img/Image4.jpg" alt="Image4"></div>
+            <div onclick="openOverlay(4)"><img src="./img/Image5.jpg" alt="Image5"></div>
+            <div onclick="openOverlay(5)"><img src="./img/Image6.jpg" alt="Image6"></div>
+            <div onclick="openOverlay(6)"><img src="./img/Image7.jpg" alt="Image7"></div>
+            <div onclick="openOverlay(7)"><img src="./img/Image8.jpg" alt="Image8"></div>
+            <div onclick="openOverlay(8)"><img src="./img/Image9.jpg" alt="Image9"></div>
+            <div onclick="openOverlay(9)"><img src="./img/Image10.jpg" alt="Image10"></div>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="./script.js"></script>
+</body>
+</html>

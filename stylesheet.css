@@ -1,0 +1,228 @@
+.coiny-regular {
+  font-family: "Coiny", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --padding-main: 0 50px;
+  --dialog-width: 600px;
+  --dialog-height: 600px;
+}
+
+body {
+  margin: 0;
+  font-family: "Coiny", system-ui;
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.hide-scrollbar {
+  overflow-y: hidden;
+}
+
+header {
+  padding: var(--padding-main);
+  width: auto;
+  height: 120px;
+  background-color: rgb(8, 32, 40);
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  height: 40%;
+  width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  padding: var(--padding-main);
+  background-color: rgb(6, 23, 30);
+}
+
+p {
+  width: 44px;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  margin-top: 50px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.image-container {
+  margin: 100px 0 100px 0;
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+  flex-wrap: wrap;
+}
+
+.image-container img {
+  height: 140px;
+  width: 140px;
+  object-fit: cover;
+  border-radius: 24px;
+}
+
+.image-container img:hover {
+  cursor: pointer;
+  transform: scale(1.05, 1.05)
+}
+
+footer {
+  padding: var(--padding-main);
+  width: auto;
+  height: 120px;
+  background-color: rgb(8, 32, 40);
+}
+
+.overlay {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+.dialog {
+  position: absolute;
+  top: calc(50% - var(--dialog-height)/2);
+  left: calc(50% - var(--dialog-width)/2);
+  height: var(--dialog-height);
+  width: var(--dialog-width);
+  background-color: rgb(8, 32, 40);
+  z-index: 1;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.img-pop-up {
+  margin: 0 10px 0 10px;
+  height: 463px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-pop-up img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.x-close {
+  margin: 5px 5px 0 5px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-button-close {
+  height: 32px;
+  width: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9999px;
+}
+
+.nav-button-close:hover {
+  cursor: pointer;
+  filter: invert(1);
+  background-color: red;
+}
+
+.nav-button-close:active {
+  transform: scale(0.95, 0.95)
+}
+
+.nav-button {
+  height: 32px;
+  width: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9999px;
+}
+
+.nav-button:hover {
+  cursor: pointer;
+  filter: invert(1);
+  background-color: red;
+}
+
+.nav-button:active {
+  transform: scale(0.95, 0.95);
+}
+
+.button-cont {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  column-gap: 36px;
+}
+
+.d-none {
+  display: none;
+  overflow-y: hidden;
+}
+
+@media (max-width: 660px) {
+  :root {
+    --dialog-width: 550px;
+  }
+}
+
+@media (max-width: 600px) {
+  :root {
+    --dialog-width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  :root {
+    --dialog-width: 450px;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --dialog-width: 400px;
+  }
+}
+
+@media (max-width: 420px) {
+  :root {
+    --dialog-width: 350px;
+  }
+}
+
+@media (max-width: 380px) {
+  :root {
+    --dialog-width: 300px;
+  }
+}
+
+@media (max-width: 330px) {
+  :root {
+    --dialog-width: 250px;
+  }
+}
+
+@media (max-width: 280px) {
+  :root {
+    --dialog-width: 200px;
+  }
+}
