@@ -17,10 +17,10 @@ The project displays a personal photo album with 10 sample images shown in an at
 
 ## 🛠️ Technologies
 
-- **HTML5**: Semantic markup
-- **CSS3**: Modern styling with Custom Properties (CSS Variables)
-- **Vanilla JavaScript**: No frameworks, pure JS functionality
-- **Custom Font**: Coiny (Google Fonts)
+- **HTML**
+- **CSS**
+- **JavaScript**
+- **Font**
 
 ## 📁 Project Structure
 
